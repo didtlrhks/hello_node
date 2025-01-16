@@ -1,11 +1,1 @@
-const express = require('express');
-
-const app = express()
-
-app.get('/',function(req,res){
-    res.send('Hello World')
-}
-
-)
-
-app.listen(3000)
+setTimeout(()=>{console.log("5초지남")},5000)
