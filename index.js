@@ -7,7 +7,7 @@ app.get('/',(req,res) => {
 })
 
 app.get('/dog',(req,res) => {
-    res.send("강아지")
+    res.send({'sound' : '멍멍'})
 })
 
 app.get('/cat',(req,res) => {
