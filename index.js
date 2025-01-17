@@ -13,7 +13,12 @@ app.get('/dog',(req,res) => {
 app.get('/cat',(req,res) => {
     res.send("고양이")
 })
+app.get('/cat',(req,res) => {
+    res.send("고양이")
+})
+
 
 app.listen(port, () => {
     console.log('Example port ${port}')
 })
+
