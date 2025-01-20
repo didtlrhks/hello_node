@@ -1,24 +1,9 @@
-const express = require('express')
-const app = express()
-const port = 3000
+const http = require("http");
 
-app.get('/',(req,res) => {
-    res.send("Hello World")
+const server = http.createServer((req,res) => {
+    console.log("요청 발생");
 })
 
-app.get('/dog',(req,res) => {
-    res.send({'sound' : '멍멍'})
-})
-
-app.get('/cat',(req,res) => {
-    res.send("고양이")
-})
-app.get('/cat',(req,res) => {
-    res.send("고양이")
-})
-
-
-app.listen(port, () => {
-    console.log('Example port ${port}')
-})
-
+server.listen(3000, () => {
+    console.log("서버가 실행 중");
+});
